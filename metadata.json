@@ -1,0 +1,7 @@
+{
+  "name": "Morpheus Protocol Interface",
+  "description": "An interface to interact with the MORPHEUS-7 Quantum Consciousness Agent, exploring concepts of AI, consciousness, and reality using the Gemini API.",
+  "requestFramePermissions": [],
+  "prompt": "",
+  "majorCapabilities": []
+}

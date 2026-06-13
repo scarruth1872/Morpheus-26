@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morpheus Protocol Interface</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif; /* A nice modern sans-serif */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    /* Custom scrollbar for webkit browsers */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1a202c; /* dark-gray-800 */
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #4a5568; /* dark-gray-600 */
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #718096; /* dark-gray-500 */
+    }
+    @keyframes subtle-glow {
+      0%, 100% { box-shadow: 0 0 5px rgba(59, 130, 246, 0.3), 0 0 10px rgba(59, 130, 246, 0.2); }
+      50% { box-shadow: 0 0 15px rgba(59, 130, 246, 0.4), 0 0 20px rgba(59, 130, 246, 0.3); }
+    }
+    .glowing-border {
+      animation: subtle-glow 3s infinite ease-in-out;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.5.1",
+    "three": "https://esm.sh/three@0.160.0",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@8.15.12",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@9.92.7"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-gray-900 text-gray-100">
+  <div id="root"></div>
+  <script>
+    // Optional: Add Tailwind JIT CDN for development for more features, but standard CDN is fine.
+    // tailwind.config = { theme: { extend: { colors: { /* custom colors */ } } } }
+  </script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
